@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.github.jsqlparser:jsqlparser:0.9.4'
+
+    testCompile 'junit:junit:4+'
+    testCompile 'org.springframework:spring-test:4.1.5.RELEASE'
+    testCompile 'org.mockito:mockito-all:1.8.4'
+
+}
